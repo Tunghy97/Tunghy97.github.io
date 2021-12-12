@@ -32,6 +32,10 @@
   transition: margin 0.5s ease-in;
 }
 
+.info {
+  text-align: left;
+}
+
 #shop .item:hover {
   margin: -6px 0 0;
   background-color: rgb(228, 215, 228);
@@ -40,7 +44,6 @@
 
 .item img {
   width: 100%;
-  height: 20vw;
   border: 2px solid black;
 }
 
