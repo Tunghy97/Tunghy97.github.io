@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+#test1 .text-head {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: rgb(185, 77, 185);
+  margin-bottom: 15px;
+}
+
+#test1 .contain {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 20px ;
+
+}
+
+#test1 .list-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#test1 .item {
+  width: 33.33333%;
+  padding: 4px 8px;
+  margin-bottom: 15px;
+}
+
+.item img {
+  transition: all 0.5s ease-in ;
+  width: 100%;
+}
+
+.item img:hover {
+  transform: translate(0,-3px);
+  box-shadow: 5px 5px rgba(0,0,0,.15);
+
+}
+
+.item .info {
+  padding: 4px 8px;
+}
+
+
+.info a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#trang1 .contener {
+  max-width: 900px;
+  margin: auto;
+  padding: 12px;
+}
+
+#trang1 .img {
+  width: 100%;
+}
+
+#trang1 .content {
+  margin-top: -5px;
+ 
+}
+
+#trang1 .text-head {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#trang1 .text {
+  border: 2px solid rgb(26, 21, 21);
+  font-size: 18px;
+  padding: 6px;
+}
+ #trang1 button {
+   margin-top: 15px;
+   padding: 10px;
+   background-color: tomato;
+ }
+
+ #trang1 button:hover {
+   background-color: violet;
+   
+ }
