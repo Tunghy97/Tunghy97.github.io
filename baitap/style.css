@@ -64,6 +64,9 @@
   margin-top: 10px;
 }
 
-
-
-
+#rectangle {
+  
+  padding-top: 60%;
+  background: url('/asset/img/263472281_103372782192535_8058497051536923797_n.jpg') top center /contain no-repeat;
+  
+}
