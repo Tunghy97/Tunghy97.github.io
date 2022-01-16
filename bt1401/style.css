@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mg-t {
+    margin-top: 52px;
+}
+
+.pd-l-r {
+    padding: 0 46px;
+}
+
+h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding-top: 20px;
+}
+
+h4 {
+    font-weight: 400;
+    text-transform:capitalize;
+    padding-top: 20px;
+    font-size: 36px;
+    opacity: 0.8;
+
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4;
+    padding: 24px 0;
+}
+
+img {
+    width: 100%;
+    padding-top: 56px;
+}
+
+.header {
+    min-height: 48px;
+    line-height: 48px;
+    width: 100%;
+}
+
+.icon {
+    transform: rotate(130deg);
+}
+
+
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 90px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.send-email {
+    background-color: #ddd;
+}
+
+
+.address-email input{
+    background-color: #ddd;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 12px;
+    min-width: 320px;
+
+}
+
+
+.button {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 280px;
+}
+
+.button button {
+    padding: 16px 28px;
+    background-color: white;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    
+}
+
+.send-email {
+    min-height: 300px;
+    text-align: center;
+    
+}
+
+.header-main {
+    font-size: 30px;
+    padding: 76px 0;
+}
+
+.address-email {
+    display: flex;
+    justify-content: center;
+}
+
+.fooder {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+}
+.fooder p {
+    display: inline-block;
+}
