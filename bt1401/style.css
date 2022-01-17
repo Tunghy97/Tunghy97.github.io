@@ -93,6 +93,7 @@ img {
     border-bottom: 1px solid gray;
     padding-bottom: 12px;
     min-width: 320px;
+    margin: 0 -16px;
 
 }
 
