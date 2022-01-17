@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+.header {
+    padding-top: 50px;
+    min-height: 48px;
+    line-height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    font-family: 'Playfair';
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 40px;
+}
+
+.nav a {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 90px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
 .mg-t {
     margin-top: 52px;
 }
@@ -39,29 +69,23 @@ img {
     padding-top: 56px;
 }
 
-.header {
-    min-height: 48px;
-    line-height: 48px;
-    width: 100%;
-}
 
-.icon {
+.icon i{
     transform: rotate(130deg);
-}
+    position: absolute;
 
-
-.nav li {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 90px;
-    text-transform: uppercase;
-    opacity: 0.9;
 }
 
 .send-email {
     background-color: #ddd;
 }
 
+.address-email {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
 
 .address-email input{
     background-color: #ddd;
@@ -72,6 +96,11 @@ img {
 
 }
 
+.send-email {
+    min-height: 300px;
+    text-align: center;
+    
+}
 
 .button {
     text-align: center;
@@ -87,21 +116,12 @@ img {
     
 }
 
-.send-email {
-    min-height: 300px;
-    text-align: center;
-    
-}
 
 .header-main {
     font-size: 30px;
     padding: 76px 0;
 }
 
-.address-email {
-    display: flex;
-    justify-content: center;
-}
 
 .fooder {
     background-color: #ddd;
