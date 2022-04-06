@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.mg-top-60 {
+  margin-top: 60px;
+}
+
+.mg-top-30 {
+  margin-top: 30px;
+}
+.text-center {
+  text-align: center;
+}
+
+:root {
+  --colorMenu: #1289a7;
+  --colorBackground: #f3f5fb;
+  --colorBtn: #38a4f8;
+  --color-icon-check : #27ae60;
+  --color-edit : rgba(56, 164, 248, 1);
+  --color-delete: rgba(250, 18, 18, 1);
+
+
+}
+
+body {
+  background-color: var(--colorBackground);
+}
+
+#container-signin h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 8px;
+
+  color: #000000;
+}
+
+.signin {
+  width: 600px;
+  margin: auto;
+}
+
+.signin input {
+  width: 100%;
+  height: 53px;
+  background: #ffffff;
+  border: 1px solid #676565;
+  box-sizing: border-box;
+  box-shadow: -4px 4px 4px #898484;
+  border-radius: 24px;
+  padding: 0 30px;
+  margin-top: 10px;
+}
+
+.signin label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.signin .btn .btnSignin {
+  width: 241px;
+  height: 52px;
+  background: #38a4f8;
+  border-radius: 10px;
+}
+
+.signin .btn {
+  text-align: right;
+}
+
+
+
+.menu {
+  background-color: var(--colorMenu);
+  border: 1px solid #000000;
+  border-radius: 0px;
+  height: 100vh;
+  padding: 30px;
+}
+
+.nav .sub-nav li:hover ,
+.nav > li:hover > a ,
+#content .btn:hover{
+    color: black;
+    background-color: gray;
+} 
+
+.nav li a{
+    display: block;
+    color: white;
+    padding: 0 24px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.nav .sub-nav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0,0,0, 0.6);
+    border-radius: 24px;
+    left: 38px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.nav li:hover .sub-nav{
+    display: block;
+}
+
+.nav .sub-nav li {
+    display: block;
+}
+
+
+.nav .sub-nav a {
+    line-height: 38px;
+    color: black;
+    padding-left:12px ;
+    min-width: 160px;
+}
+
+.menu .logo img {
+  width: 100%;
+}
+
+
+.menu .nav li {
+  list-style-type: none;
+}
+
+.menu .nav a {
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  font-weight: bold;
+}
+.menu .nav > li:hover > a {
+  color: black;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+
+.header {
+  display: flex;
+  height: 76px;
+  background: #ffffff;
+  box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 20.16px 20.16px;
+  padding: 30px;
+  justify-content: space-between;
+  
+  
+}
+
+.header .icon-header {
+  display: flex;
+  align-items: center;
+}
+
+.header .icon-img-user {
+  margin: 0 30px;
+}
+
+.header span {
+  color: rgba(164, 54, 54, 1);
+}
+
+.over-header .tittle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.over-header .tittle h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+
+  color: #22242c;
+}
+
+.over-header .tittle .func-btn, .footer .number-of-pages {
+  display: flex;
+  align-items: center;
+}
+
+.over-header .tittle .icon-table {
+  width: 50px;
+  height: 50px;
+  background: var(--colorBtn);
+  box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+  border-radius: 40px;
+  line-height: 54px;
+  color: white;
+  font-size: 20px;
+}
+
+.over-header .tittle .search {
+  width: 443px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 40px;
+  line-height: 50px;
+  position: relative;
+
+  margin: 0 30px;
+}
+
+.over-header .tittle .bx-search-alt-2 {
+  position: absolute;
+  line-height: 50px;
+  left: 20px;
+  font-size: 20px;
+}
+
+.over-header .tittle .search input {
+ padding:0 50px;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.over-header .tittle .btn-add {
+  width: 148px;
+  height: 50px;
+  background: var(--colorBtn);
+  border-radius: 50px;
+  
+}
+
+
+.card-ns {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 26px;
+}
+
+.card-ns .check  {
+  color: var(--color-icon-check);
+ font-size: 24px;
+ margin-right: 10px;
+}
+
+.card-ns .edit-card {
+  color: var(--color-edit);
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.card-ns .delete-card {
+  color: var(--color-delete);
+  font-size: 24px;
+}
+
+
+.phone-number,
+.Year-of-Birth,
+.email,
+.address {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.icon-phone,
+.icon-Year,
+.icon-email,
+.icon-address {
+
+  margin-right: 10px;
+}
+
+.card-ns .header-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-ns .img-card img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+}
+
+.card-ns .name-card {
+  display: flex;
+  align-items: center;
+}
+
+.card-ns .act-card {
+  display: flex;
+  align-items: center;
+}
+
+.card-ns .act-card img {
+  margin: 0 12px;
+}
+
+.card-ns .info-card {
+  padding: 0 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer .number-of-pages .over-number:hover, .over-header .tittle .btn-add:hover, .func-btn .icon-table:hover  {
+  background-color: rgba(15, 41, 109, 1);
+  color: white;
+}
+
+.footer .number-of-pages .over-number:hover p {
+  color: white;
+}
+
+.number-of-pages i {
+  color: gray;
+}
+
+.number-of-pages i:hover {
+  color: #000000
+}
+ 
+.footer .number-of-pages .over-number {
+  width: 50px;
+height: 50px;
+background: #f7f8fa;
+box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+border-radius: 40px;
+border: 2px solid gray;
+margin: 0 15px;
+}
+
+.footer .number-of-pages .over-number p {
+  line-height: 50px;
+  color: gray;
+}
+
