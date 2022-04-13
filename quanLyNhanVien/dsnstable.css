@@ -1,0 +1,54 @@
+
+.name-row-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.name-row-table .name {
+    margin-left: 10px;
+}
+.img-row-table {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+table{
+    border-spacing: 0;
+}
+
+th {
+    border: 1px solid gray;
+    padding: 12px;
+}
+td {
+    border: 1px solid gray;
+    padding:  6px 15px;
+    text-align: center; 
+}
+
+.name-nv {
+    width: 300px;
+    
+}
+
+.address-nv {
+    width: 400px;
+}
+.birthday-nv , .phone-number-nv, .container-table .check, .act-nv{
+    width: 150px;
+}
+
+.act-nv {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-table .check {
+
+    color: var(--color-icon-check);
+    font-size: 24px;
+}
+

@@ -1,0 +1,69 @@
+.signin input {
+    width: 100%;
+    height: 53px;
+    background: #ffffff;
+    border: 1px solid #676565;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 4px #898484;
+    border-radius: 24px;
+    padding: 0 30px;
+    margin-top: 10px;
+  }
+  
+  .signin label {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #000000;
+  }
+  
+  .signin .btn .btnSignin {
+    width: 241px;
+    height: 52px;
+    background: #38a4f8;
+    border-radius: 10px;
+  }
+  
+  .signin .btn {
+    text-align: right;
+  }
+  
+#container-signin h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 8px;
+  
+    color: #000000;
+  }
+  
+  #container-signin .logo {
+    width: 400px;
+    height: 250px;
+    margin: 30px auto;
+    
+  }
+
+  #container-signin .logo img {
+    height: 100%;
+  }
+  
+  .signin {
+    width: 600px;
+    margin: auto;
+  }
+
+  @media (max-width : 1024px){
+    #container-signin .logo {
+      width: 300px;
+      height: 200px;
+      margin: 30px auto;
+      
+    }
+  }
