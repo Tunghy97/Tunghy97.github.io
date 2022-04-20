@@ -17,6 +17,35 @@
   position: absolute;
 }
 
+.btn-down {
+  position: relative;
+}
+.btn-down:hover .sub-down {
+  display: block;
+}
+
+
+.sub-down {
+  position: absolute;
+    top: 50px;
+    background-color: currentcolor;
+    width: 100%;
+    display: none;
+}
+
+.down-pdf, .down-word {
+  color: black;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.down-pdf:hover, 
+.down-word:hover{
+  background-color: var(--colorBtn);
+}
+
+
 
 @media(max-width: 1112px) {
   .info {
