@@ -6,7 +6,7 @@ let btnCancel = document.querySelector(".btn-cancel");
 let edit = document.querySelectorAll(".edit-card");
 let check = document.querySelectorAll(".check");
 let btnAddProject = document.querySelectorAll(".btn-add-project");
-let nameNv = document.querySelectorAll(".name-nv");
+let nameNv = document.querySelectorAll(".name-nv-cc");
 let closeModalCc = document.querySelector(".close-modal-cc")
 
 
