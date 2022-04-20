@@ -1,0 +1,41 @@
+.info {
+    display: flex;
+}
+.icon-print {
+  padding: 13px 22px;
+  border: 1px solid #8e8ea1;
+  box-sizing: border-box;
+  border-radius: 40px;
+  color: black;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-cart-hs {
+  position: absolute;
+}
+
+
+@media(max-width: 1112px) {
+  .info {
+    display: block;
+  }
+
+  .container-info .over-img {
+    width: 100px;
+  }
+
+  .container-info .birthday {
+    margin: 5px 0 30px;
+  }
+
+  .container-info{
+    margin-top: 20px;
+  }
+  .icon-print {
+    margin-right: 0;
+  }
+  
+}

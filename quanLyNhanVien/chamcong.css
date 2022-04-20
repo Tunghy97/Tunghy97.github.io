@@ -1,0 +1,101 @@
+.act-nv {
+    cursor: pointer;
+}
+
+.container-info-cc, .container-tabble-time{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-contener-cc {
+    position: relative;
+}
+
+.close-modal-cc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px;
+}
+
+.cc2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note .full-time,
+.note .part-time,
+.note .off,
+.note .forget,
+.header-title,
+.header-title .note  {
+    display: flex;
+    
+    align-items: center;
+}
+
+.note .full-time,
+.note .part-time,
+.note .off,
+.note .forget{
+    padding: 15px 10px;
+}
+
+.icon-full {
+    color: var(--color-note-full);
+}
+.icon-part {
+    color: var(--color-note-part);
+}
+.icon-off {
+    color: var(--color-note-off);
+}
+.icon-forget {
+    color: var(--color-note-forget);
+}
+
+.table2 th span {
+    display: block;
+    font-size: 28px;
+}
+
+.dategrid-top {
+    text-align: right;
+
+}
+
+.func-btn-cc {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media(max-width: 1112px) {
+    .func-btn-cc {
+        order: 2;
+       
+    }
+
+    .container-calendar {
+        order: 2;
+    }
+
+    .container-note {
+        order: 1;
+    }
+
+    .note {
+        display: flex;
+        justify-content: end;
+    }
+
+    .container-tabble-time {
+        order: 3;
+    }
+
+    .container-img-info {
+        order: 1;
+    }
+}

@@ -24,12 +24,12 @@ th {
     padding: 12px;
 }
 td {
-    border: 1px solid gray;
+    border: 1px solid rgb(148, 148, 148);
     padding:  6px 15px;
     text-align: center; 
 }
 
-.name-nv {
+.name-nv, .email-nv {
     width: 300px;
     
 }
@@ -41,9 +41,37 @@ td {
     width: 150px;
 }
 
+.act-nv .edit-card {
+    color: var(--color-edit);
+    font-size: 24px;
+   
+  }
+
+  .act-nv .delete-card {
+    color: var(--color-delete);
+    font-size: 24px;
+
+  
+  }
+
 .act-nv {
     font-size: 25px;
     font-weight: bold;
+    position: relative;
+}
+
+.act-nv:hover .sub-act {
+    display: block;
+}
+
+.sub-act {
+    display: none;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    
+   
 }
 
 .container-table .check {
