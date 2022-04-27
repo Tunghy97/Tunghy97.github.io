@@ -1,0 +1,528 @@
+#doan {
+  width: 100%;
+  overflow: hidden;
+}
+
+#doan .header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 8% 50px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.search {
+  opacity: .8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search:hover {
+opacity: 1;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  color: aqua;
+  padding: 0 80px 0 10px;
+  word-spacing: 5px;
+}
+
+.search button {
+  height: 50px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size : 20px;
+  color: rgb(61, 61, 61);
+}
+
+
+.over-search-item {
+  position: relative;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  background-color: rgba(242, 242, 242, 0.79);
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 30px;
+  
+}
+
+.show {
+  width: 300px;
+}
+
+.icon-user, .icon-cart {
+  background-color: rgba(242, 242, 242, 0.79);
+  color: rgb(63, 62, 62);
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
+  cursor: pointer;
+  
+}
+
+
+
+.total-pay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.icon-user:hover, .icon-cart:hover {
+  opacity: 1;
+}
+.header .brand {
+  font-family: "Sedgwick Ave", cursive;
+  position: relative;
+  z-index: 12;
+  display: block;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 6px 25px rgba(0, 0, 0, 0.1),
+    0px 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.header nav {
+  display: block;
+  z-index: 99;
+}
+
+.header nav .nav-items a {
+  position: relative;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.header nav .nav-items a::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  height: 1.5px;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.header nav .nav-items a:hover::before {
+  width: 100%;
+}
+
+.header .brand {
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 48px;
+  line-height: 54px;
+}
+
+/* #doan .body {
+  height: 100vh;
+} */
+
+#doan .body .container-img-slider {
+  height: 100%;
+}
+
+.social-icons {
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 22px 70px 4px;
+  transition: 0.8s ease;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  background-color: rgba(69, 122, 191, 1);
+}
+
+
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.new-product {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.new-product .header-new-product {
+  /* text-align: center; */
+  font-size: 40px;
+  padding: 40px 0 20px;
+}
+
+.new-product .img-product {
+  margin: 0 10px;
+  position: relative;
+}
+
+.new-product .img-product .title {
+  padding: 10px;
+
+}
+
+.img-product .title .product-price {
+  margin: 10px 0;
+
+}
+
+.new-product .img-product .title .product-name {
+  font-size: .8rem;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-spacing: 7px;
+  color: rgb(67, 66, 66);
+  font-weight: bold;
+}
+
+.new-product .see-all-product {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  background-color: hsla(0, 0%, 59%, 0.389);
+  padding: 4px;
+  opacity: 0.8;
+}
+
+.new-product .see-all-product:hover {
+  opacity: 1;
+}
+
+.new-product .see-all-product a {
+  font-size: 20px;
+  color: rgb(21, 20, 20);
+  display: flex;
+  align-items: center;
+
+}
+
+
+.modal {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.3);
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  
+  
+}
+
+
+
+.modal .modal-contener{
+  top: 100px;
+  right: 80px;
+  background-color: white;
+  position: absolute;
+  min-height: 200px;
+  width: 400px;
+  max-width: calc(100% - 32px);
+
+}
+
+.modal .modal-header{
+  height: 90px;
+  background-color: #009688 ;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-close:hover {
+  opacity: 1;
+}
+
+.modal .modal-close {
+position: absolute;
+right: 0;
+padding: 12px;
+cursor: pointer;
+opacity: 0.8;
+}
+
+
+
+.modal .modal-body{
+  padding:16px;
+
+}
+
+.modal .modal-body .btn-pay {
+  background-color: rgb(9, 157, 242);
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.modal .modal-label{
+  font-size: 15px;
+  display: block;
+  margin-bottom: 12px;
+
+}
+
+
+.modal .input-modal {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  
+  margin-bottom: 25px;
+}
+
+.modal .modal-sign {
+
+  background-color:#009688 ;
+}
+
+.modal .modal-sign, .modal-signup {
+  font-size: 15px;
+  padding: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  
+  cursor: pointer;
+}
+
+.modal-signup {
+  background-color: rgb(32, 30, 30);
+}
+
+.modal .modal-sign:hover, .modal-signup:hover {
+  opacity: 0.8;
+}
+
+.modal .help {
+  color: #2196F3;
+}
+
+
+.modal .modal-footer{
+  text-align: right;
+  margin: 15px 0;
+  padding:0 16px;
+  font-size: 15px;
+  
+}
+
+.modal.open{
+  display: flex;
+}
+
+.quantity {
+ display: flex;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+}
+
+
+
+
+.btn-box {
+  text-align: center;
+}
+
+.btn {
+ 
+  display: inline-block;
+ 
+ 
+  color: rgb(107, 105, 105);
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.counterBtn {
+  padding: 0 10px;
+}
+
+
+#counter {
+  font-size: 20px;
+  text-align: center;
+  
+}
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.container-delete-product {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding: 12px;
+  margin: 50px auto;
+}
+
+.hidden {
+  position: relative;
+  display: none;
+}
+
+.input-email {
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+  width: 21px;
+}
+input[type=checkbox] {
+  width: 28px;
+}
+
+input[type=checkbox], input[type=radio] {
+
+  height: 21px;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid gray;
+ 
+}
+
+input[type=checkbox]+label, input[type=radio]+label {
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+}
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+.btn-sub-email {
+position: absolute;
+right: 0;
+}
+
+.btn-sub-email button {
+  width: 100px;
+  height: 20px;
+  padding: 20px;
+  background-color: #169cefb0;
+}
+
+.btn-sub-email button:hover {
+  background-color: #169cefe8;
+
+}
+
+.footer {
+  background-color: #414141;
+  font-size: 16px;
+  padding: 50px 0;
+}
+.footer p {
+  line-height: 1.5;
+  font-weight: bolder;
+  margin-bottom: 15px;
+
+
+}
+
+.footer a {
+  color: rgb(187, 187, 187);
+  text-decoration: none;
+  display: block;
+  line-height: 1.5;
+  position: relative;
+  margin: 15px 0;
+}
+
+/* .footer a::after {
+  content: "";
+  background-color: #b3b3b3;
+    display: block;
+    height: 0.5px;
+    margin: 2px auto 20px;
+    position: relative;
+    width: 80px;
+  
+} */
+
+@media (max-width: 959px){
+.container-email {
+    width: 95%;
+}
+
+}

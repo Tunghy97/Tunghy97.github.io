@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách nhân sự</title>
+    <link rel="icon" href="./img/logo.png" type="imge/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <div id="doan">
+      <div class="header">
+        <a href="#" class="brand">TH Stylist</a>
+        <div class="nav-btn">
+          <div class="nav-btn-content"></div>
+        </div>
+        <nav id="nav" title="du lịch homepage">
+          <div class="nav-items">
+            <a href="./home.html" title="du lịch homepage">Home</a>
+            <a href="./men-fashion.html" style="color: tomato"
+              >Thời trang Nam</a
+            >
+            <a href="./women-fashion.html">Thời trang Nữ</a>
+            <a href="./accessory.html">Phụ kiện</a>
+            <a href="#" id="last">Tin Tức</a>
+          </div>
+        </nav>
+
+        <div class="search">
+          <div class="over-search-item">
+            <input type="text" />
+            <button>
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="icon-user">
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="icon-cart">
+          <i class="bx bx-cart-add"></i>
+        </div>
+      </div>
+      <div class="body">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Tunghy97" title="facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" title="instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" title="github">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="new-product mg-top-100" id="new-product">
+        <div class="grid wide">
+          <div class="header-new-product">QUẦN</div>
+          <div class="row container-img-new-product">
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/QUAN-NAM1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN SHORT NAM KHAKI BOOLAAB 1</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/quan-nam2.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN JEANS NAM STRAIGHT</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/quan-nam1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN JEANS NAM</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/product-hot6.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN JEANS NAM BLACK</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/product-hot1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    QUẦN SHORT NAM STAR WARS BOOZILLA
+                  </div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="see-all-product">
+            <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="new-product mg-top-30" id="new-product">
+        <div class="grid wide">
+          <div class="header-new-product">ÁO</div>
+          <div class="row container-img-new-product">
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/áo-nam1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO NAM STAR WARS BOOZILLA</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/new-product4.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    SHIRTS UN THE SIMPSONS BOOZILLA
+                  </div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/áo-nam-2.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO NAM CHAMPION</div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/new-product4.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    SHIRTS UN THE SIMPSONS BOOZILLA
+                  </div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/img/ÁO-nam-3.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO PHÔNG OVERSIZED PATTERN THE BATMAN BOOZILLA
+                  </div>
+                  <div class="product-price">20 <span>$</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="see-all-product">
+            <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-center align-center mg-bt-40">
+          <div class="text-center container-email" style="position: relative">
+            <p style="font-size: 32px; text-transform: uppercase">
+              ĐĂNG KÝ NHẬN THÔNG TIN
+            </p>
+            <p style="margin-bottom: 20px">
+              ( Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn
+              nữa. )
+            </p>
+            <input
+              name="emaill"
+              type="email"
+              pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+              id="emaill"
+              class="input-email"
+              style="outline: none; margin-top: -20px"
+              placeholder="Nhập email"
+              forc
+            />
+            <div>
+              <div class="hidden mg-top-20">
+                <div class="d-flex" style="text-align: left">
+                  <div style="flex: 1">
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="male"
+                      checked
+                    />
+                    <label for="male"> Nam </label>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                      style="margin-left: 10px"
+                    />
+                    <label for="female" style="margin-right: 10px"> Nữ </label>
+                  </div>
+                  <div class="d-flex" style="flex: 1">
+                    <input type="checkbox" id="policy" name="policy" />
+                    <label for="policy" style="margin-left: 10px">
+                      Tôi đồng ý nhận các bản tin thương mại từ TH.vn qua email
+                      cá nhân và các phương tiện khác.
+                    </label>
+                  </div>
+                </div>
+                <div class="btn-sub-email mg-top-20">
+                  <button class="text-white" type="button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer text-white">
+        <div class="row">
+          <div class="col l-4 m-4 c-4 text-center">
+            <p>CÔNG TY</p>
+
+            <a href="#">Giới thiệu</a>
+            <a href="#">Địa chỉ các Cửa hàng</a>
+
+            <a href="#">Tuyển dụng</a>
+          </div>
+          <div class="col l-4 m-4 c-4 text-center">
+            <p>CHÍNH SÁCH</p>
+            <a href="#">Chính sách thành viên</a>
+
+            <a href="">Đổi / trả & Hoafn tiền</a>
+
+            <a href="#">Chính sách bảo hành</a>
+
+            <a href="#">Thanh toán & Vận chuyển</a>
+          </div>
+          <div class="col l-4 m-4 c-4 text-center">
+            <p>KẾT NỐI</p>
+            <a href="#">Facebook</a>
+
+            <a href="#">Intagram</a>
+
+            <a href="#">Youtube</a>
+
+            <a href="#">Email: thstyle@gmail.com</a>
+
+            <a href="#">Hotline: 19009889 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Signin -->
+    <div class="modal js-modal-signin">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          Đăng nhập tài khoản
+        </div>
+
+        <div class="modal-body">
+          <label for="how-many" class="modal-label"> Email / SĐT </label>
+          <input
+            type="text"
+            id="how-many"
+            class="input-modal"
+            placeholder="abcdef@gmail.com"
+          />
+
+          <label for="pass" class="modal-label"> Mật Khẩu </label>
+          <input
+            type="text"
+            id="pass"
+            class="input-modal"
+            placeholder="*******"
+          />
+          <div class="modal-sign text-white">Đăng nhập</div>
+          <div class="modal-signup js-btn-signup mg-top-30 text-white">
+            Đăng Ký
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Signup -->
+    <div class="modal js-modal-signup">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          Đăng ký tài khoản
+        </div>
+
+        <div class="modal-body">
+          <label for="name" class="modal-label"> Họ và Tên </label>
+          <input
+            type="text"
+            id="name"
+            class="input-modal"
+            placeholder="Nguyễn Văn A"
+          />
+          <label for="number-phone" class="modal-label"> SĐT </label>
+          <input
+            type="text"
+            id="number-phone"
+            class="input-modal"
+            placeholder="0123456789"
+          />
+
+          <label for="email" class="modal-label">
+            <i class="ti-shopping-cart"></i>
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="input-modal"
+            placeholder="abcdef@gmail.com"
+          />
+
+          <label for="pass" class="modal-label">
+            <i class="ti-user"></i>
+            Mật Khẩu
+          </label>
+          <input
+            type="text"
+            id="pass"
+            class="input-modal"
+            placeholder="*******"
+          />
+          <div class="modal-sign text-white">Đăng ký</div>
+          <div class="modal-signup js-btn-signin mg-top-30 text-white">
+            Đăng nhập
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div class="modal js-modal-cart">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          GIỎ HÀNG
+        </div>
+
+        <div class="modal-body row">
+          <div class="col l-4">
+            <div class="image-product-cart">
+              <img src="./assets/img/new-product1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col l-8">
+            <div class="over-info-cart">
+              <div class="name-product-cart">
+                ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+              </div>
+              <div class="parame">
+                <div class="price-product-cart mg-top-10">
+                    <div style="color: tomato;">60 <span>$</span></div>
+                  </div>
+                <div class="size-prosuct-cart mg-top-10">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="quantity mg-top-10">
+                  <div class="btn-container">
+                    <div class="btn counterBtn prevBtn">-</div>
+                    <div id="counter" style="color: #333333">1</div>
+                    <div class="btn counterBtn nextBtn">+</div>
+                  </div>
+                  <div class="container-delete-product">
+                    <i class="bx bxs-coffee-togo"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-pay mg-top-30">
+            <div>Tổng cộng :</div>
+            <div>60 <span>$</span></div>
+          </div>
+          <button class="btn-pay text-white mg-top-25">Thanh toán ngay</button>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

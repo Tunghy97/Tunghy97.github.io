@@ -1,0 +1,20 @@
+.add-to-cart {
+    position: absolute;
+    bottom: 75px;
+    padding: 20px;
+    width: 100%;
+    /* text-align: center; */
+    opacity: 0;
+    transition: 0.8s ease;
+    transition-delay:0.2s ;
+}
+
+.add-to-cart button {
+    width: 100%;
+    background-color: tomato;
+    height: 30px;
+}
+
+.img-product-men:hover .add-to-cart {
+    opacity: 1;
+}

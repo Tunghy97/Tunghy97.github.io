@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:ital,wght@0,300;1,300&family=Paytone+One&family=Playfair+Display&family=Poppins:wght@500&display=swap");
+@import url("./base.css");
+@import url("./color.css");
+@import url("./reponsive.css");
+@import url("./men-fashion.css");
+@import url("./women-fashion.css");
+@import url("./home.css");
+@import url("./details.css");
+
+.mg-top-60 {
+  margin-top: 60px;
+}
+.mg-top-100 {
+  margin-top: 100px;
+}
+
+.mg-left-30 {
+  margin-left: 30px;
+}
+.mg-right-30 {
+  margin-right: 30px;
+}
+
+.mg-top-30 {
+  margin-top: 30px;
+}
+.text-center {
+  text-align: center;
+}
+
+.mg-top-10 {
+  margin-top: 10px;
+}
+
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+.mg-top-25 {
+  margin-top: 25px;
+}
+
+.mg-bt-25 {
+  margin-bottom: 25px;
+}
+
+i {
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+.open-menu {
+  display: flex;
+}
+
+.text-white {
+  color: white;
+}
+
+.mg-bt-40 {
+  margin-bottom: 40px!important;
+}
+.align-center {
+  align-items: center!important;
+}
+.justify-center {
+  justify-content: center!important;
+}
+.d-flex {
+  display: flex!important;
+}
+
+.pull-left, .pull-right {
+    
+  display: flex;
+  top: 50%;
+  position: absolute;
+  font-size: 30px;
+  color: rgb(24, 23, 23);
+  z-index: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #d8d8d8;
+  opacity: .6;
+}
+
+.pull-left:hover, .pull-right:hover {
+  opacity: 1;
+  
+}
+
+.pull-left {
+  margin-left: 20px;
+  left: 0;
+}
+.pull-right {
+  margin-right: 20px;
+  right: 0;
+}
