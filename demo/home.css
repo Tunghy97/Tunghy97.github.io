@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 25px 8% 50px;
+  padding: 25px 5% 50px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
