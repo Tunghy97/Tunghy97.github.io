@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TH STORE</title>
-    <link rel="icon" href="./img/logo.png" type="imge/x-icon" />
+    <link rel="icon" href="./assets/img/logo.png" type="imge/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,35 +47,36 @@
     ></script>
     <div id="doan">
       <div class="header">
+        <div class="mobile-menu text-white">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <a href="#" class="brand">TH Stylist</a>
-        <div class="nav-btn">
-          <div class="nav-btn-content"></div>
-        </div>
-        <nav id="nav">
-          <div class="nav-items">
-            <a href="#" style="color: tomato;">Home</a>
-            <a href="#new-product">Mẫu mới</a>
-            <a href="./men-fashion.html">Thời trang Nam</a>
-            <a href="./women-fashion.html">Thời trang Nữ</a>
-            <a href="./accessory.html">Phụ kiện</a>
-            <a href="#" id="last">Tin Tức</a>
-          </div>
-        </nav>
 
-        <div class="search">
-          <div class="over-search-item">
-            <input type="text" />
-            <button>
-              <i class="bx bx-search-alt-2"></i>
-            </button>
-          </div>
+        <div class="nav-items">
+          <a href="#" style="color: tomato">Home</a>
+          <a href="#new-product">Mẫu mới</a>
+          <a href="./men-fashion.html">Thời trang Nam</a>
+          <a href="./women-fashion.html">Thời trang Nữ</a>
+          <a href="./accessory.html">Phụ kiện</a>
+          <a href="#" >Tin Tức</a>
         </div>
 
-        <div class="icon-user">
-          <i class="bx bxs-user"></i>
-        </div>
-        <div class="icon-cart">
-          <i class="bx bx-cart-add"></i>
+        <div class="func">
+          <div class="search">
+            <div class="over-search-item">
+              <input type="text" />
+              <button>
+                <i class="bx bx-search-alt-2"></i>
+              </button>
+            </div>
+          </div>
+  
+          <div class="icon-user">
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="icon-cart">
+            <i class="bx bx-cart-add"></i>
+          </div>
         </div>
       </div>
       <div class="body">
@@ -114,21 +116,6 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/Tunghy97" title="facebook">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="#" title="instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="#" title="github">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          
         </div>
       </div>
       <div class="new-product mg-top-30" id="new-product">
@@ -356,9 +343,9 @@
               </div>
             </div>
           </div>
-          <div class="see-all-product">
+          <!-- <div class="see-all-product">
             <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="new-product mg-top-30" id="new-product">
@@ -586,9 +573,9 @@
               </div>
             </div>
           </div>
-          <div class="see-all-product">
+          <!-- <div class="see-all-product">
             <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="container">
@@ -614,18 +601,6 @@
             <div>
               <div class="hidden mg-top-20">
                 <div class="d-flex" style="text-align: left">
-                  <div style="flex: 1">
-                    <input type="radio" id="male" name="gender" value="male" checked/>
-                    <label for="male"> Nam </label>
-                    <input
-                      type="radio"
-                      id="female"
-                      name="gender"
-                      value="female"
-                      style="margin-left: 10px"
-                    />
-                    <label for="female" style="margin-right: 10px"> Nữ </label>
-                  </div>
                   <div class="d-flex" style="flex: 1">
                     <input type="checkbox" id="policy" name="policy" />
                     <label for="policy" style="margin-left: 10px">
@@ -644,7 +619,14 @@
       </div>
       <div class="footer text-white">
         <div class="row">
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
+            <a href="#" class="logo">TH Stylist</a>
+
+            <a href="#">Email: thstyle@gmail.com</a>
+
+            <a href="#">Hotline: 19009889 </a>
+          </div>
+          <div class="col l-3 m-3 c-3 text-center">
             <p>CÔNG TY</p>
 
             <a href="#">Giới thiệu</a>
@@ -652,7 +634,7 @@
 
             <a href="#">Tuyển dụng</a>
           </div>
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
             <p>CHÍNH SÁCH</p>
             <a href="#">Chính sách thành viên</a>
 
@@ -662,23 +644,30 @@
 
             <a href="#">Thanh toán & Vận chuyển</a>
           </div>
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
             <p>KẾT NỐI</p>
             <a href="#">Facebook</a>
 
             <a href="#">Intagram</a>
 
             <a href="#">Youtube</a>
-
-            <a href="#">Email: thstyle@gmail.com</a>
-
-            <a href="#">Hotline: 19009889 </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal Signin -->
+    <div class="modal modal-menu">
+      <div class="nav-items">
+        <a href="#" style="color: tomato">Home</a>
+        <a href="#new-product">Mẫu mới</a>
+        <a href="./men-fashion.html">Thời trang Nam</a>
+        <a href="./women-fashion.html">Thời trang Nữ</a>
+        <a href="./accessory.html">Phụ kiện</a>
+        <a href="#" >Tin Tức</a>
+      </div>
+    </div>
+
     <div class="modal js-modal-signin">
       <div class="modal-contener">
         <div class="modal-close js-modal-close text-white">
@@ -801,7 +790,7 @@
               </div>
               <div class="parame">
                 <div class="price-product-cart mg-top-10">
-                  <div style="color: tomato;">60 <span>$</span></div>
+                  <div style="color: tomato">60 <span>$</span></div>
                 </div>
                 <div class="size-prosuct-cart mg-top-10">
                   <label for="size">SIZE:</label>
@@ -826,11 +815,16 @@
               </div>
             </div>
           </div>
-          <div class="total-pay mg-top-30">
+          <div class="total mg-top-30">
             <div>Tổng cộng :</div>
-            <div>60 <span>$</span></div>
+            <div>60000 <span>VND</span></div>
           </div>
-          <button class="btn-pay text-white mg-top-25">Thanh toán ngay</button>
+          <button
+            class="btn-pay text-white mg-top-25"
+            onclick="location.href = 'http://127.0.0.1:5500/pay.html'"
+          >
+            Thanh toán ngay
+          </button>
         </div>
 
         <div class="modal-footer">

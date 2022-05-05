@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TH STORE</title>
+    <link rel="icon" href="./assets/img/logo.png" type="imge/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <div id="doan">
+      <div class="header">
+        <div class="mobile-menu text-white">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="./home.html" class="brand">TH Stylist</a>
+        <div class="nav-btn">
+          <div class="nav-btn-content"></div>
+        </div>
+        <nav id="nav">
+          <div class="nav-items">
+            <a href="./home.html" >Home</a>
+            <a href="./men-fashion.html" 
+              >Thời trang Nam</a
+            >
+            <a href="./women-fashion.html">Thời trang Nữ</a>
+            <a href="./accessory.html">Phụ kiện</a>
+            
+          </div>
+        </nav>
+        <div class="func">
+          <div class="search">
+            <div class="over-search-item">
+              <input type="text" />
+              <button>
+                <i class="bx bx-search-alt-2"></i>
+              </button>
+            </div>
+          </div>
+  
+          <div class="icon-user">
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="icon-cart">
+            <i class="bx bx-cart-add"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-pay">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-7">
+              <div class="heading-pay">
+                <h2>Đơn hàng (<span>2</span> Sản phẩm)</h2>
+                <a href="./home.html" style="color: tomato">Chọn thêm sản phẩm</a>
+              </div>
+              <div class="product-pay">
+                <div class="modal-body row">
+                  <div class="col l-2 m-2 c-2">
+                    <div class="image-product-cart">
+                      <img src="./assets/img/new-product1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col l-10 m-10 c-10">
+                    <div class="over-info-cart">
+                      <div class="name-product-cart">
+                        ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+                        <div class="price-product-cart mg-top-10">
+                          <div style="font-weight: bold">
+                            60000 <span>VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="parame">
+                        <div class="color-product">
+                          Color:
+                          <div
+                            class="color"
+                            style="
+                              height: 20px;
+                              width: 40px;
+                              background-color: bisque;
+                            "
+                          ></div>
+                        </div>
+                        <div class="size-product-cart mg-top-10">
+                          <label for="size">SIZE:</label>
+
+                          <select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                          </select>
+                        </div>
+                        <div class="quantity mg-top-10">
+                          <div class="btn-container">
+                            <div class="btn counterBtn prevBtn">-</div>
+                            <div id="counter" style="color: #333333">1</div>
+                            <div class="btn counterBtn nextBtn">+</div>
+                          </div>
+                          <div class="container-delete-product">
+                            <i class="bx bxs-coffee-togo"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-pay">
+                <div class="modal-body row">
+                  <div class="col l-2 m-2 c-2">
+                    <div class="image-product-cart">
+                      <img src="./assets/img/new-product1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col l-10 m-10 c-10">
+                    <div class="over-info-cart">
+                      <div class="name-product-cart">
+                        ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+                        <div class="price-product-cart mg-top-10">
+                          <div style="font-weight: bold">
+                            60000 <span>VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="parame">
+                        <div class="color-product">
+                          Color:
+                          <div
+                            class="color"
+                            style="
+                              height: 20px;
+                              width: 40px;
+                              background-color: bisque;
+                            "
+                          ></div>
+                        </div>
+                        <div class="size-product-cart mg-top-10">
+                          <label for="size">SIZE:</label>
+
+                          <select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                          </select>
+                        </div>
+                        <div class="quantity mg-top-10">
+                          <div class="btn-container">
+                            <div class="btn counterBtn prevBtn">-</div>
+                            <div id="counter" style="color: #333333">1</div>
+                            <div class="btn counterBtn nextBtn">+</div>
+                          </div>
+                          <div class="container-delete-product">
+                            <i class="bx bxs-coffee-togo"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="discount_code">
+                <div class="field">
+                  <input type="text" placeholder="Nhập mã giảm giá" />
+                </div>
+
+                <button class="spinner-label">Áp dụng</button>
+              </div>
+              <div class="pay">
+                <div class="provisional-sum mg-top-30">
+                  Tạm tính :
+                  <div>120000 <span>VNĐ</span></div>
+                </div>
+                <div class="transport-pay mg-top-30">
+                  Phí vận chuyển :
+                  <div>0 <span>VNĐ</span></div>
+                </div>
+                <div class="voucher-pay mg-top-30">
+                  Khuyến mãi :
+                  <div>0 <span>VNĐ</span></div>
+                </div>
+                <div class="total-pay mg-top-30">
+                  Thanh toán :
+                  <div>120000 <span>VNĐ</span></div>
+                </div>
+              </div>
+              <button class="btn-pay text-white mg-top-25">Đặt Hàng</button>
+            </div>
+            <div class="col l-5">
+              <div class="form_checkout">
+                <label class="label"> Thông tin giao hàng </label>
+                <div class="row">
+                  <div class="col l-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Name"
+                        value=""
+                        required="required"
+                        placeholder="Họ tên người nhận *"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Phone"
+                        value=""
+                        required="required"
+                        placeholder="Số điện thoại *"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Email"
+                        value=""
+                        placeholder="Email nhận thông tin đơn hàng"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-12">
+                    <div class="form-group">
+                      <label for="selectCountry" class="select_cusom_country">
+                        Tỉnh/Thành phố *
+                      </label>
+
+                      <select class="form-control" id="selectCountry">
+                        <option data-id="50538" data-name="Hà Nội">
+                          Hà Nội
+                        </option>
+
+                        <option data-id="50539" data-name="Hà Giang">
+                          Hà Giang
+                        </option>
+
+                        <option data-id="50540" data-name="Cao Bằng">
+                          Cao Bằng
+                        </option>
+
+                        <option data-id="50541" data-name="Bắc Kạn">
+                          Bắc Kạn
+                        </option>
+
+                        <option data-id="50542" data-name="Tuyên Quang">
+                          Tuyên Quang
+                        </option>
+
+                        <option data-id="50543" data-name="Lào Cai">
+                          Lào Cai
+                        </option>
+
+                        <option data-id="50544" data-name="Điện Biên">
+                          Điện Biên
+                        </option>
+
+                        <option data-id="50545" data-name="Lai Châu">
+                          Lai Châu
+                        </option>
+
+                        <option data-id="50546" data-name="Sơn La">
+                          Sơn La
+                        </option>
+
+                        <option data-id="50547" data-name="Yên Bái">
+                          Yên Bái
+                        </option>
+
+                        <option data-id="50548" data-name="Hoà Bình">
+                          Hoà Bình
+                        </option>
+
+                        <option data-id="50549" data-name="Thái Nguyên">
+                          Thái Nguyên
+                        </option>
+
+                        <option data-id="50550" data-name="Lạng Sơn">
+                          Lạng Sơn
+                        </option>
+
+                        <option data-id="50551" data-name="Quảng Ninh">
+                          Quảng Ninh
+                        </option>
+
+                        <option data-id="50552" data-name="Bắc Giang">
+                          Bắc Giang
+                        </option>
+
+                        <option data-id="50553" data-name="Phú Thọ">
+                          Phú Thọ
+                        </option>
+
+                        <option data-id="50554" data-name="Vĩnh Phúc">
+                          Vĩnh Phúc
+                        </option>
+
+                        <option data-id="50555" data-name="Bắc Ninh">
+                          Bắc Ninh
+                        </option>
+
+                        <option data-id="50556" data-name="Hải Dương">
+                          Hải Dương
+                        </option>
+
+                        <option data-id="50557" data-name="Hải Phòng">
+                          Hải Phòng
+                        </option>
+
+                        <option data-id="50558" data-name="Hưng Yên">
+                          Hưng Yên
+                        </option>
+
+                        <option data-id="50559" data-name="Thái Bình">
+                          Thái Bình
+                        </option>
+
+                        <option data-id="50560" data-name="Hà Nam">
+                          Hà Nam
+                        </option>
+
+                        <option data-id="50561" data-name="Nam Định">
+                          Nam Định
+                        </option>
+
+                        <option data-id="50562" data-name="Ninh Bình">
+                          Ninh Bình
+                        </option>
+
+                        <option data-id="50563" data-name="Thanh Hóa">
+                          Thanh Hóa
+                        </option>
+
+                        <option data-id="50564" data-name="Nghệ An">
+                          Nghệ An
+                        </option>
+
+                        <option data-id="50565" data-name="Hà Tĩnh">
+                          Hà Tĩnh
+                        </option>
+
+                        <option data-id="50566" data-name="Quảng Bình">
+                          Quảng Bình
+                        </option>
+
+                        <option data-id="50567" data-name="Quảng Trị">
+                          Quảng Trị
+                        </option>
+
+                        <option data-id="50568" data-name="Thừa Thiên Huế">
+                          Thừa Thiên Huế
+                        </option>
+
+                        <option data-id="50569" data-name="Đà Nẵng">
+                          Đà Nẵng
+                        </option>
+
+                        <option data-id="50570" data-name="Quảng Nam">
+                          Quảng Nam
+                        </option>
+
+                        <option data-id="50571" data-name="Quảng Ngãi">
+                          Quảng Ngãi
+                        </option>
+
+                        <option data-id="50572" data-name="Bình Định">
+                          Bình Định
+                        </option>
+
+                        <option data-id="50573" data-name="Phú Yên">
+                          Phú Yên
+                        </option>
+
+                        <option data-id="50574" data-name="Khánh Hòa">
+                          Khánh Hòa
+                        </option>
+
+                        <option data-id="50575" data-name="Ninh Thuận">
+                          Ninh Thuận
+                        </option>
+
+                        <option data-id="50576" data-name="Bình Thuận">
+                          Bình Thuận
+                        </option>
+
+                        <option data-id="50577" data-name="Kon Tum">
+                          Kon Tum
+                        </option>
+
+                        <option data-id="50578" data-name="Gia Lai">
+                          Gia Lai
+                        </option>
+
+                        <option data-id="50579" data-name="Đắk Lắk">
+                          Đắk Lắk
+                        </option>
+
+                        <option data-id="50580" data-name="Đắk Nông">
+                          Đắk Nông
+                        </option>
+
+                        <option data-id="50581" data-name="Lâm Đồng">
+                          Lâm Đồng
+                        </option>
+
+                        <option data-id="50582" data-name="Bình Phước">
+                          Bình Phước
+                        </option>
+
+                        <option data-id="50583" data-name="Tây Ninh">
+                          Tây Ninh
+                        </option>
+
+                        <option data-id="50584" data-name="Bình Dương">
+                          Bình Dương
+                        </option>
+
+                        <option data-id="50585" data-name="Đồng Nai">
+                          Đồng Nai
+                        </option>
+
+                        <option data-id="50586" data-name="Bà Rịa - Vũng Tàu">
+                          Bà Rịa - Vũng Tàu
+                        </option>
+
+                        <option data-id="50587" data-name="Hồ Chí Minh">
+                          Hồ Chí Minh
+                        </option>
+
+                        <option data-id="50588" data-name="Long An">
+                          Long An
+                        </option>
+
+                        <option data-id="50589" data-name="Tiền Giang">
+                          Tiền Giang
+                        </option>
+
+                        <option data-id="50590" data-name="Bến Tre">
+                          Bến Tre
+                        </option>
+
+                        <option data-id="50591" data-name="Trà Vinh">
+                          Trà Vinh
+                        </option>
+
+                        <option data-id="50592" data-name="Vĩnh Long">
+                          Vĩnh Long
+                        </option>
+
+                        <option data-id="50593" data-name="Đồng Tháp">
+                          Đồng Tháp
+                        </option>
+
+                        <option data-id="50594" data-name="An Giang">
+                          An Giang
+                        </option>
+
+                        <option data-id="50595" data-name="Kiên Giang">
+                          Kiên Giang
+                        </option>
+
+                        <option data-id="50596" data-name="Cần Thơ">
+                          Cần Thơ
+                        </option>
+
+                        <option data-id="50597" data-name="Hậu Giang">
+                          Hậu Giang
+                        </option>
+
+                        <option data-id="50598" data-name="Sóc Trăng">
+                          Sóc Trăng
+                        </option>
+
+                        <option data-id="50599" data-name="Bạc Liêu">
+                          Bạc Liêu
+                        </option>
+
+                        <option data-id="50600" data-name="Cà Mau">
+                          Cà Mau
+                        </option>
+                      </select>
+                    </div>
+                    <input type="hidden" id="CityID" name="CityID" value="0" />
+                    <input
+                      type="hidden"
+                      id="DistrictID"
+                      name="DistrictID"
+                      value="0"
+                    />
+
+                    <input type="hidden" id="CityName" value="" />
+                    <input type="hidden" id="DistrictName" value="" />
+                  </div>
+                  <div class="col l-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Address"
+                        value=""
+                        required="required"
+                        placeholder="Địa chỉ cụ thể: Số nhà, tên đường, Phường/Xã,.. *"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <label class="label"> Ghi chú </label>
+                <div class="row">
+                  <div class="col l-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="Note"
+                        rows="2"
+                        placeholder="Viết ghi chú cho cửa hàng"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <br />
+
+
+                <label class="label-pay"> Chọn hình thức thanh toán </label>
+                <div class="list-group list-group-payment list-payment">
+                  
+                  
+                    <div class="payment-box">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          id="PaymentID14190"
+                          class="form-check-input"
+                          name="PaymentID"
+                          data-id="14190"
+                          value="14190"
+                        />
+                      </div>
+                      <img class="ic" src="./assets/img/momo.png" alt="">
+                      <label for="PaymentID14190"> Thanh toán Ví Momo</label>
+                    </div>
+              
+                  <div class="list_bank list_bank-14190"></div>
+
+                  
+                    <div class="payment-box">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          id="PaymentID13421"
+                          class="form-check-input"
+                          name="PaymentID"
+                          data-id="13421"
+                          value="13421"
+                          checked="checked"
+                        />
+                      </div>
+                      <img class="ic" src="./assets/img/cod.png" alt="">
+
+                      <label for="PaymentID13421">Thanh toán COD</label>
+                    </div>
+                  
+                  <div class="list_bank list_bank-13421"></div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex justify-center align-center mg-bt-40">
+            <div class="text-center container-email" style="position: relative">
+              <p style="font-size: 32px; text-transform: uppercase">
+                ĐĂNG KÝ NHẬN THÔNG TIN
+              </p>
+              <p style="margin-bottom: 20px">
+                ( Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn
+                nữa. )
+              </p>
+              <input
+                name="emaill"
+                type="email"
+                pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+                id="emaill"
+                class="input-email"
+                style="outline: none; margin-top: -20px"
+                placeholder="Nhập email"
+                forc
+              />
+              <div>
+                <div class="hidden mg-top-20">
+                  <div class="d-flex" style="text-align: left">
+                
+                    <div class="d-flex" style="flex: 1">
+                      <input type="checkbox" id="policy" name="policy" />
+                      <label for="policy" style="margin-left: 10px">
+                        Tôi đồng ý nhận các bản tin thương mại từ TH.vn qua email
+                        cá nhân và các phương tiện khác.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="btn-sub-email mg-top-20">
+                    <button class="text-white" type="button">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer text-white">
+        <div class="row">
+          <div class="col l-3 m-3 c-3 text-center">
+            <a href="#" class="logo">TH Stylist</a>
+
+            <a href="#">Email: thstyle@gmail.com</a>
+
+            <a href="#">Hotline: 19009889 </a>
+          </div>
+          <div class="col l-3 m-3 c-3 text-center">
+            <p>CÔNG TY</p>
+
+            <a href="#">Giới thiệu</a>
+            <a href="#">Địa chỉ các Cửa hàng</a>
+
+            <a href="#">Tuyển dụng</a>
+          </div>
+          <div class="col l-3 m-3 c-3 text-center">
+            <p>CHÍNH SÁCH</p>
+            <a href="#">Chính sách thành viên</a>
+
+            <a href="">Đổi / trả & Hoafn tiền</a>
+
+            <a href="#">Chính sách bảo hành</a>
+
+            <a href="#">Thanh toán & Vận chuyển</a>
+          </div>
+          <div class="col l-3 m-3 c-3 text-center">
+            <p>KẾT NỐI</p>
+            <a href="#">Facebook</a>
+
+            <a href="#">Intagram</a>
+
+            <a href="#">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-menu">
+      <div class="nav-items">
+        <a href="./home.html">Home</a>
+        
+        <a href="./men-fashion.html">Thời trang Nam</a>
+        <a href="./women-fashion.html">Thời trang Nữ</a>
+        <a href="./accessory.html">Phụ kiện</a>
+        <a href="#">Tin Tức</a>
+      </div>
+    </div>
+
+    <!-- Modal Signin -->
+    <div class="modal js-modal-signin">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          Đăng nhập tài khoản
+        </div>
+
+        <div class="modal-body">
+          <label for="how-many" class="modal-label"> Email / SĐT </label>
+          <input
+            type="text"
+            id="how-many"
+            class="input-modal"
+            placeholder="abcdef@gmail.com"
+          />
+
+          <label for="pass" class="modal-label"> Mật Khẩu </label>
+          <input
+            type="text"
+            id="pass"
+            class="input-modal"
+            placeholder="*******"
+          />
+          <div class="modal-sign text-white">Đăng nhập</div>
+          <div class="modal-signup js-btn-signup mg-top-30 text-white">
+            Đăng Ký
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Signup -->
+    <div class="modal js-modal-signup">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          Đăng ký tài khoản
+        </div>
+
+        <div class="modal-body">
+          <label for="name" class="modal-label"> Họ và Tên </label>
+          <input
+            type="text"
+            id="name"
+            class="input-modal"
+            placeholder="Nguyễn Văn A"
+          />
+          <label for="number-phone" class="modal-label"> SĐT </label>
+          <input
+            type="text"
+            id="number-phone"
+            class="input-modal"
+            placeholder="0123456789"
+          />
+
+          <label for="email" class="modal-label">
+            <i class="ti-shopping-cart"></i>
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="input-modal"
+            placeholder="abcdef@gmail.com"
+          />
+
+          <label for="pass" class="modal-label">
+            <i class="ti-user"></i>
+            Mật Khẩu
+          </label>
+          <input
+            type="text"
+            id="pass"
+            class="input-modal"
+            placeholder="*******"
+          />
+          <div class="modal-sign text-white">Đăng ký</div>
+          <div class="modal-signup js-btn-signin mg-top-30 text-white">
+            Đăng nhập
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div class="modal js-modal-cart">
+      <div class="modal-contener">
+        <div class="modal-close js-modal-close text-white">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="modal-header text-white">
+          <i style="margin-right: 16px" class="ti-bag"></i>
+          GIỎ HÀNG
+        </div>
+
+        <div class="modal-body row">
+          <div class="col l-4">
+            <div class="image-product-cart">
+              <img src="./assets/img/new-product1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col l-8">
+            <div class="over-info-cart">
+              <div class="name-product-cart">
+                ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+              </div>
+              <div class="parame">
+                <div class="price-product-cart mg-top-10">
+                  <div style="font-weight: bold">60000 <span>VNĐ</span></div>
+                </div>
+                <div class="size-prosuct-cart mg-top-10">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="quantity mg-top-10">
+                  <div class="btn-container">
+                    <div class="btn counterBtn prevBtn">-</div>
+                    <div id="counter" style="color: #333333">1</div>
+                    <div class="btn counterBtn nextBtn">+</div>
+                  </div>
+                  <div class="container-delete-product">
+                    <i class="bx bxs-coffee-togo"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-pay mg-top-30">
+            Tổng cộng :<div style="font-weight: bold;">60000 <span>VNĐ</span></div> 
+          </div>
+          <button class="btn-pay text-white mg-top-25" onclick="location.href = 'http://127.0.0.1:5500/pay.html'">Thanh toán ngay</button>
+        </div>
+
+        <div class="modal-footer">
+          <p class="need-help">Need <a href="" class="help">help</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

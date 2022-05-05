@@ -46,7 +46,7 @@ $(".container-img-new-product").slick({
           {
             breakpoint: 1023,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 1,
             },
           },
@@ -54,7 +54,7 @@ $(".container-img-new-product").slick({
             {
               breakpoint: 740,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: false,
               },

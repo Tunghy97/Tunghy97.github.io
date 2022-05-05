@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danh sách nhân sự</title>
-    <link rel="icon" href="./img/logo.png" type="imge/x-icon" />
+    <title>TH STORE</title>
+    <link rel="icon" href="./assets/img/logo.png" type="imge/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,67 +47,70 @@
     ></script>
     <div id="doan">
       <div class="header">
-        <a href="#" class="brand">TH Stylist</a>
+        <div class="mobile-menu text-white">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="./home.html" class="brand">TH Stylist</a>
         <div class="nav-btn">
           <div class="nav-btn-content"></div>
         </div>
-        <nav id="nav" title="du lịch homepage">
+        <nav id="nav">
           <div class="nav-items">
-            <a href="./home.html" title="du lịch homepage">Home</a>
+            <a href="./home.html">Home</a>
             <a href="./men-fashion.html" 
               >Thời trang Nam</a
             >
             <a href="./women-fashion.html" style="color: tomato">Thời trang Nữ</a>
             <a href="./accessory.html">Phụ kiện</a>
+            <a href="#">Tin tức</a>
+
             
           </div>
         </nav>
 
-        <div class="search">
-          <div class="over-search-item">
-            <input type="text" />
-            <button>
-              <i class="bx bx-search-alt-2"></i>
-            </button>
+        <div class="func">
+          <div class="search">
+            <div class="over-search-item">
+              <input type="text" />
+              <button>
+                <i class="bx bx-search-alt-2"></i>
+              </button>
+            </div>
+          </div>
+  
+          <div class="icon-user">
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="icon-cart">
+            <i class="bx bx-cart-add"></i>
           </div>
         </div>
-
-        <div class="icon-user">
-          <i class="bx bxs-user"></i>
-        </div>
-        <div class="icon-cart">
-          <i class="bx bx-cart-add"></i>
-        </div>
       </div>
-      <div class="body">
-        <div class="social-icons">
-          <a href="https://www.facebook.com/Tunghy97" title="facebook">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="#" title="instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="#" title="github">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </div>
-      </div>
+      
       <div class="new-product mg-top-100" id="new-product">
         <div class="grid wide">
-          <div class="header-new-product">QUẦN</div>
-          <div class="row container-img-new-product">
-            <div class="img-product img-product-men">
+          <div class="fillter">
+            <button class="btn-fillter active" onclick="filterSelection('all')">
+              Tất cả
+            </button>
+            <button class="btn-fillter fillter-shirt" onclick="filterSelection('shirt')">
+              Áo
+            </button>
+            <button class="btn-fillter fillter-trousers" onclick="filterSelection('trousers')">
+              Quần
+            </button>
+          </div>
+          
+          <div class="row">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/quan-nu-4.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">QUẦN SHORT NỮ HIGH WAISTED RIP
                 </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
 
@@ -126,15 +130,15 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/quan-nu5.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">QUẦN SHORT NỮ BERMUDA BOW TIE
                 </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -153,15 +157,15 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/quan-nu-3.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">QUẦN SHORTS JEANS CẠP CAO NỮ 
                 </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -181,14 +185,14 @@
               </div>
             </div>
 
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/quần-nữ1.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">QUẦN SHOT NỮ</div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -207,16 +211,16 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/quan-nu2.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">
                     QUẦN JEANS NỮ STAR WARS BOOZILLA
                   </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -235,25 +239,153 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="see-all-product">
-            <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="new-product mg-top-30" id="new-product">
-        <div class="grid wide">
-          <div class="header-new-product">ÁO</div>
-          <div class="row container-img-new-product">
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
+                  <img src="./assets/img/quan-nu-4.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN SHORT NỮ HIGH WAISTED RIP
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/quan-nu5.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN SHORT NỮ BERMUDA BOW TIE
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/quan-nu-3.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN SHORTS JEANS CẠP CAO NỮ 
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/quần-nữ1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">QUẦN SHOT NỮ</div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men trousers col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/quan-nu2.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    QUẦN JEANS NỮ STAR WARS BOOZILLA
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
                   <img src="./assets/img/áo-nữ1.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">ÁO SƠ MI Nữ LOOSE DT 2 TÚI NGỰC
                 </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -272,9 +404,9 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/áo-nữ2.jpg" alt="" />
                 </a>
                 <div class="title">
@@ -282,7 +414,7 @@
                     ÁO PHÔNG NỮ OVERSIZED IN
 
                   </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -302,15 +434,15 @@
               </div>
             </div>
 
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/áo-nữ3.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">ÁO PHÔNG NỮ OVERSIZED IN
                 </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -329,16 +461,16 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/ao-nữ4.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">
                     ÁO NỮ
                   </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -357,16 +489,296 @@
                 </div>
               </div>
             </div>
-            <div class="img-product img-product-men">
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
               <div class="img">
-                <a href="#">
+                <a href="./details.html">
                   <img src="./assets/img/ao-nu-5.jpg" alt="" />
                 </a>
                 <div class="title">
                   <div class="product-name">
                     ÁO T-SHIRTS NỮ PINK
                   </div>
-                  <div class="product-price">20 <span>$</span></div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO SƠ MI Nữ LOOSE DT 2 TÚI NGỰC
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ2.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO PHÔNG NỮ OVERSIZED IN
+
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ3.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO PHÔNG NỮ OVERSIZED IN
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/ao-nữ4.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO NỮ
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/ao-nu-5.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO T-SHIRTS NỮ PINK
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ1.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO SƠ MI Nữ LOOSE DT 2 TÚI NGỰC
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ2.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO PHÔNG NỮ OVERSIZED IN
+
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/áo-nữ3.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">ÁO PHÔNG NỮ OVERSIZED IN
+                </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/ao-nữ4.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO NỮ
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <div class="size-prosuct-cart">
+                  <label for="size">SIZE:</label>
+
+                  <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="btn-add-to-cart">
+                  <button>Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="img-product img-product-men shirt col l-3 c-4 m-6">
+              <div class="img">
+                <a href="./details.html">
+                  <img src="./assets/img/ao-nu-5.jpg" alt="" />
+                </a>
+                <div class="title">
+                  <div class="product-name">
+                    ÁO T-SHIRTS NỮ PINK
+                  </div>
+                  <div class="product-price">20000 <span>VND</span></div>
                 </div>
               </div>
               <div class="add-to-cart">
@@ -386,9 +798,7 @@
               </div>
             </div>
           </div>
-          <div class="see-all-product">
-            <a href="">xem tất cả... <i class="bx bx-chevrons-right"></i></a>
-          </div>
+          
         </div>
       </div>
       <div class="container">
@@ -414,24 +824,7 @@
             <div>
               <div class="hidden mg-top-20">
                 <div class="d-flex" style="text-align: left">
-                  <div style="flex: 1">
-                    <input
-                      type="radio"
-                      id="male"
-                      name="gender"
-                      value="male"
-                      checked
-                    />
-                    <label for="male"> Nam </label>
-                    <input
-                      type="radio"
-                      id="female"
-                      name="gender"
-                      value="female"
-                      style="margin-left: 10px"
-                    />
-                    <label for="female" style="margin-right: 10px"> Nữ </label>
-                  </div>
+                  
                   <div class="d-flex" style="flex: 1">
                     <input type="checkbox" id="policy" name="policy" />
                     <label for="policy" style="margin-left: 10px">
@@ -450,7 +843,14 @@
       </div>
       <div class="footer text-white">
         <div class="row">
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
+            <a href="#" class="logo">TH Stylist</a>
+
+            <a href="#">Email: thstyle@gmail.com</a>
+
+            <a href="#">Hotline: 19009889 </a>
+          </div>
+          <div class="col l-3 m-3 c-3 text-center">
             <p>CÔNG TY</p>
 
             <a href="#">Giới thiệu</a>
@@ -458,7 +858,7 @@
 
             <a href="#">Tuyển dụng</a>
           </div>
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
             <p>CHÍNH SÁCH</p>
             <a href="#">Chính sách thành viên</a>
 
@@ -468,7 +868,7 @@
 
             <a href="#">Thanh toán & Vận chuyển</a>
           </div>
-          <div class="col l-4 m-4 c-4 text-center">
+          <div class="col l-3 m-3 c-3 text-center">
             <p>KẾT NỐI</p>
             <a href="#">Facebook</a>
 
@@ -476,11 +876,20 @@
 
             <a href="#">Youtube</a>
 
-            <a href="#">Email: thstyle@gmail.com</a>
-
-            <a href="#">Hotline: 19009889 </a>
+            
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="modal modal-menu">
+      <div class="nav-items">
+        <a href="./home.html">Home</a>
+        
+        <a href="./men-fashion.html">Thời trang Nam</a>
+        <a href="#" style="color: tomato">Thời trang Nữ</a>
+        <a href="./accessory.html">Phụ kiện</a>
+        <a href="#">Tin Tức</a>
       </div>
     </div>
 
@@ -607,7 +1016,7 @@
               </div>
               <div class="parame">
                 <div class="price-product-cart mg-top-10">
-                    <div style="color: tomato;">60 <span>$</span></div>
+                    <div style="color: tomato;">60000 <span>VND</span></div>
                   </div>
                 <div class="size-prosuct-cart mg-top-10">
                   <label for="size">SIZE:</label>
@@ -634,9 +1043,10 @@
           </div>
           <div class="total-pay mg-top-30">
             <div>Tổng cộng :</div>
-            <div>60 <span>$</span></div>
+            <div>60000 <span>VND</span></div>
           </div>
-          <button class="btn-pay text-white mg-top-25">Thanh toán ngay</button>
+          <button class="btn-pay text-white mg-top-25" onclick="location.href = 'http://127.0.0.1:5500/pay.html'">Thanh toán ngay</button>
+
         </div>
 
         <div class="modal-footer">
@@ -646,5 +1056,6 @@
     </div>
     <script src="slider.js"></script>
     <script src="home.js"></script>
+    <script src="men.js"></script>
   </body>
 </html>

@@ -1,0 +1,179 @@
+.container-pay {
+    margin-top: 180px;
+}
+
+.form_checkout {
+    padding: 0 30px;
+}
+
+.nav-pay {
+    display: flex;
+}
+
+/* .header-pay a {
+    display: flex;
+    
+} */
+
+.heading-pay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.name-product-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-product {
+    display: flex;
+}
+
+.color-product .color {
+    margin-left: 24px;
+}
+
+.product-pay {
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+
+.discount_code {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discount_code .field input {
+    width: 500px;
+}
+.field input {
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.94em 0.8em;
+    border: 1px #d9d9d9 solid;
+    height: 44px;
+    background-color: #fff;
+    color: #333;
+}
+
+.spinner-label {
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pay {
+    padding:0 15px;
+}
+
+.total-pay, .voucher-pay, .transport-pay, .provisional-sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, input:required {
+    box-shadow: none;
+}
+
+.form-control {
+    font-size: 16px;
+    min-height: 48px;
+}
+.form-control {
+    font-size: 14px;
+    min-height: 42px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+   
+    border-radius: 0.25rem;
+}
+
+.label-pay {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.list-group-payment {
+    margin-bottom: 20px;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+}
+
+.list-group-payment .list-group-item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-group-payment .list-group-item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-group-payment .payment-box {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-payment .payment-box {
+    display: flex;
+    align-items: center;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    margin-bottom: 0.125rem;
+}
+
+.ic {
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    margin-right: 10px;
+    margin-left: 10px
+    
+
+}
