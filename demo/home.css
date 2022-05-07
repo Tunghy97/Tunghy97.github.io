@@ -185,6 +185,7 @@ opacity: 1;
 
 .new-product .img-product {
   position: relative;
+  padding-bottom: 25px;
 }
 
 .img-product-slider{
@@ -557,7 +558,14 @@ right: 0;
   }
 
   .add-to-cart {
-    bottom: 80px;
+    bottom: 100px;
     padding: 3px;
+  }
+}
+
+@media(max-width : 380px){
+  .add-to-cart {
+    bottom: 120px;
+    padding: 0;
   }
 }
