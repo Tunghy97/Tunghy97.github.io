@@ -108,6 +108,7 @@ for(let btnAddCart of btnAddCarts){
 
 // quantity
 btnAdd.addEventListener("click", function () {
+  alert("cộng")
   counter.innerText = +counter.innerText + 1;
 });
 
