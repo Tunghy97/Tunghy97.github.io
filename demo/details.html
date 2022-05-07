@@ -67,7 +67,7 @@
         </nav>
 
         <div class="func">
-          <div class="search">
+          <div class="search search-pc">
             <div class="over-search-item">
               <input type="text" />
               <button>
@@ -103,11 +103,13 @@
                 
               </div>
               <div class="col l-9 m-10 c-10">
-                <div class="container-img-detail">
-                  <img
-                    src="https://cdn.boo.vn/products/4462/quan-short-nu-high-waisted-rip-solidden-blackden-2.jpg"
-                    alt=""
-                  />
+                <div class="img-product container-img-detail">
+                  <div class="img">
+                    <a href="#"><img
+                      src="https://cdn.boo.vn/products/4462/quan-short-nu-high-waisted-rip-solidden-blackden-2.jpg"
+                      alt=""
+                    /></a>
+                  </div>
                 </div>
               </div>
               
@@ -116,12 +118,12 @@
           </div>
           <div class="col l-6 m-4 c-12">
             <div
-              class="name-detail-product mg-top-60"
+              class="product-name name-detail-product mg-top-60"
             style="font-weight: bold"
             >
               QUẦN SHORT NỮ HIGH WAISTED RIP
             </div>
-            <div class="price-detail-product mg-top-30">20 <span>$</span></div>
+            <div class=" product-price price-detail-product mg-top-30">200000 <span>VND </span></div>
 
             <!-- chọn màu -->
             <div class="color-detail-product mg-top-30">
@@ -225,14 +227,14 @@
       </div>
       <div class="footer text-white">
         <div class="row">
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <a href="#" class="logo">TH Stylist</a>
 
             <a href="#">Email: thstyle@gmail.com</a>
 
             <a href="#">Hotline: 19009889 </a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>CÔNG TY</p>
 
             <a href="#">Giới thiệu</a>
@@ -240,7 +242,7 @@
 
             <a href="#">Tuyển dụng</a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>CHÍNH SÁCH</p>
             <a href="#">Chính sách thành viên</a>
 
@@ -250,15 +252,13 @@
 
             <a href="#">Thanh toán & Vận chuyển</a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>KẾT NỐI</p>
             <a href="#">Facebook</a>
 
             <a href="#">Intagram</a>
 
             <a href="#">Youtube</a>
-
-            
           </div>
         </div>
       </div>
@@ -266,6 +266,14 @@
 
     <div class="modal modal-menu">
       <div class="nav-items">
+        <div class="search">
+          <div class="over-search-item">
+            <input type="text" />
+            <button>
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
         <a href="./home.html">Home</a>
         
         <a href="./men-fashion.html">Thời trang Nam</a>
@@ -386,50 +394,58 @@
         </div>
 
         <div class="modal-body row">
-          <div class="col l-4">
-            <div class="image-product-cart">
-              <img src="./assets/img/new-product1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col l-8">
-            <div class="over-info-cart">
-              <div class="name-product-cart">
-                ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
-              </div>
-              <div class="parame">
-                <div class="price-product-cart mg-top-10">
-                  <div style="color: tomato">60000 <span>VND</span></div>
-                </div>
-                <div class="size-prosuct-cart mg-top-10">
-                  <label for="size">SIZE:</label>
-
-                  <select name="size" id="size">
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                  </select>
-                </div>
-                <div class="quantity mg-top-10">
-                  <div class="btn-container">
-                    <div class="btn counterBtn prevBtn">-</div>
-                    <div id="counter" style="color: #333333">1</div>
-                    <div class="btn counterBtn nextBtn">+</div>
-                  </div>
-                  <div class="container-delete-product">
-                    <i class="bx bxs-coffee-togo"></i>
-                  </div>
+          <div class="list-item-cart">
+            <div class="item-cart row">
+              <div class="col l-4 m-4 c-6">
+                <div class="image-product-cart">
+                  <img src="./assets/img/new-product1.jpg" alt="" />
                 </div>
               </div>
+              <div class="col l-8 m-8 c-6">
+                <div class="over-info-cart">
+                  <div class="name-product-cart">
+                    ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+                  </div>
+                  <div class="parame">
+                    <div class="price-product-cart mg-top-10">
+                      <div style="color: tomato">60000 <span>VND</span></div>
+                    </div>
+                    <div class="size-prosuct-cart mg-top-10">
+                      <label for="size">SIZE:</label>
+    
+                      <select name="size" id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                      </select>
+                    </div>
+                    <div class="quantity mg-top-10">
+                      <div class="btn-container">
+                        <div class="btn counterBtn prevBtn">-</div>
+                        <div class="counter" style="color: #333333">1</div>
+                        <div class="btn counterBtn nextBtn">+</div>
+                      </div>
+                      <div class="container-delete-product">
+                        <i class="bx bxs-coffee-togo"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="total-pay mg-top-30">
-            <div>Tổng cộng :</div>
-            <div>60000 <span>VND</span></div>
-          </div>
-          <button class="btn-pay text-white mg-top-25" onclick="location.href = 'http://127.0.0.1:5500/pay.html'">Thanh toán ngay</button>
-
         </div>
+        <div class="total mg-top-30">
+          <div>Tổng cộng :</div>
+          <div>60000 <span>VND</span></div>
+        </div>
+        <button
+          class="btn-pay text-white mg-top-25"
+          onclick="location.href = 'http://127.0.0.1:5500/pay.html'"
+        >
+          Thanh toán ngay
+        </button>
 
         <div class="modal-footer">
           <p class="need-help">Need <a href="" class="help">help</a></p>

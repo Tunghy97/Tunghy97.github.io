@@ -56,17 +56,14 @@
         </div>
         <nav id="nav">
           <div class="nav-items">
-            <a href="./home.html" >Home</a>
-            <a href="./men-fashion.html" 
-              >Thời trang Nam</a
-            >
+            <a href="./home.html">Home</a>
+            <a href="./men-fashion.html">Thời trang Nam</a>
             <a href="./women-fashion.html">Thời trang Nữ</a>
             <a href="./accessory.html">Phụ kiện</a>
-            
           </div>
         </nav>
         <div class="func">
-          <div class="search">
+          <div class="search search-pc">
             <div class="over-search-item">
               <input type="text" />
               <button>
@@ -74,7 +71,7 @@
               </button>
             </div>
           </div>
-  
+
           <div class="icon-user">
             <i class="bx bxs-user"></i>
           </div>
@@ -82,30 +79,35 @@
             <i class="bx bx-cart-add"></i>
           </div>
         </div>
-
       </div>
 
       <div class="container-pay">
         <div class="grid wide">
           <div class="row">
-            <div class="col l-7">
+            <div class="total-pay-product col l-7 m-12 c-12">
               <div class="heading-pay">
                 <h2>Đơn hàng (<span>2</span> Sản phẩm)</h2>
-                <a href="./home.html" style="color: tomato">Chọn thêm sản phẩm</a>
+                <a href="./home.html" style="color: tomato"
+                  >Chọn thêm sản phẩm</a
+                >
               </div>
               <div class="product-pay">
                 <div class="modal-body row">
                   <div class="col l-2 m-2 c-2">
-                    <div class="image-product-cart">
-                      <img src="./assets/img/new-product1.jpg" alt="" />
+                    <div class="img-product image-product-cart">
+                      <div class="img">
+                        <a href="./details.html">
+                          <img src="./assets/img/new-product1.jpg" alt=""
+                        /></a>
+                      </div>
                     </div>
                   </div>
                   <div class="col l-10 m-10 c-10">
                     <div class="over-info-cart">
-                      <div class="name-product-cart">
+                      <div class="product-name name-product-cart">
                         ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
-                        <div class="price-product-cart mg-top-10">
-                          <div style="font-weight: bold">
+                        <div class="product-price price-product-cart mg-top-10">
+                          <div style="font-weight: bold; display: flex">
                             60000 <span>VNĐ</span>
                           </div>
                         </div>
@@ -135,7 +137,7 @@
                         <div class="quantity mg-top-10">
                           <div class="btn-container">
                             <div class="btn counterBtn prevBtn">-</div>
-                            <div id="counter" style="color: #333333">1</div>
+                            <div class="counter" style="color: #333333">1</div>
                             <div class="btn counterBtn nextBtn">+</div>
                           </div>
                           <div class="container-delete-product">
@@ -150,16 +152,20 @@
               <div class="product-pay">
                 <div class="modal-body row">
                   <div class="col l-2 m-2 c-2">
-                    <div class="image-product-cart">
-                      <img src="./assets/img/new-product1.jpg" alt="" />
+                    <div class="img-product image-product-cart">
+                      <div class="img">
+                        <a href="./details.html">
+                          <img src="./assets/img/new-product1.jpg" alt=""
+                        /></a>
+                      </div>
                     </div>
                   </div>
                   <div class="col l-10 m-10 c-10">
                     <div class="over-info-cart">
-                      <div class="name-product-cart">
+                      <div class="product-name name-product-cart">
                         ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
-                        <div class="price-product-cart mg-top-10">
-                          <div style="font-weight: bold">
+                        <div class="product-price price-product-cart mg-top-10">
+                          <div style="font-weight: bold; display: flex">
                             60000 <span>VNĐ</span>
                           </div>
                         </div>
@@ -189,7 +195,7 @@
                         <div class="quantity mg-top-10">
                           <div class="btn-container">
                             <div class="btn counterBtn prevBtn">-</div>
-                            <div id="counter" style="color: #333333">1</div>
+                            <div class="counter" style="color: #333333">1</div>
                             <div class="btn counterBtn nextBtn">+</div>
                           </div>
                           <div class="container-delete-product">
@@ -228,11 +234,11 @@
               </div>
               <button class="btn-pay text-white mg-top-25">Đặt Hàng</button>
             </div>
-            <div class="col l-5">
+            <div class="col l-5 m-12 c-12">
               <div class="form_checkout">
                 <label class="label"> Thông tin giao hàng </label>
                 <div class="row">
-                  <div class="col l-12">
+                  <div class="col l-12 m-12 c-12">
                     <div class="form-group">
                       <input
                         type="text"
@@ -244,7 +250,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col l-6">
+                  <div class="col l-6 m-6 c-6">
                     <div class="form-group">
                       <input
                         type="text"
@@ -256,7 +262,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col l-6">
+                  <div class="col l-6 m-6 c-6">
                     <div class="form-group">
                       <input
                         type="text"
@@ -267,7 +273,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col l-12">
+                  <div class="col l-12 m-12 c-12">
                     <div class="form-group">
                       <label for="selectCountry" class="select_cusom_country">
                         Tỉnh/Thành phố *
@@ -538,7 +544,7 @@
                     <input type="hidden" id="CityName" value="" />
                     <input type="hidden" id="DistrictName" value="" />
                   </div>
-                  <div class="col l-12">
+                  <div class="col l-12 m-12 c-12">
                     <div class="form-group">
                       <input
                         type="text"
@@ -553,7 +559,7 @@
                 </div>
                 <label class="label"> Ghi chú </label>
                 <div class="row">
-                  <div class="col l-12">
+                  <div class="col l-12 m-12 c-12">
                     <div class="form-group">
                       <textarea
                         class="form-control"
@@ -566,50 +572,44 @@
                 </div>
                 <br />
 
-
                 <label class="label-pay"> Chọn hình thức thanh toán </label>
                 <div class="list-group list-group-payment list-payment">
-                  
-                  
-                    <div class="payment-box">
-                      <div class="form-check">
-                        <input
-                          type="radio"
-                          id="PaymentID14190"
-                          class="form-check-input"
-                          name="PaymentID"
-                          data-id="14190"
-                          value="14190"
-                        />
-                      </div>
-                      <img class="ic" src="./assets/img/momo.png" alt="">
-                      <label for="PaymentID14190"> Thanh toán Ví Momo</label>
+                  <div class="payment-box">
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        id="PaymentID14190"
+                        class="form-check-input"
+                        name="PaymentID"
+                        data-id="14190"
+                        value="14190"
+                      />
                     </div>
-              
+                    <img class="ic" src="./assets/img/momo.png" alt="" />
+                    <label for="PaymentID14190"> Thanh toán Ví Momo</label>
+                  </div>
+
                   <div class="list_bank list_bank-14190"></div>
 
-                  
-                    <div class="payment-box">
-                      <div class="form-check">
-                        <input
-                          type="radio"
-                          id="PaymentID13421"
-                          class="form-check-input"
-                          name="PaymentID"
-                          data-id="13421"
-                          value="13421"
-                          checked="checked"
-                        />
-                      </div>
-                      <img class="ic" src="./assets/img/cod.png" alt="">
-
-                      <label for="PaymentID13421">Thanh toán COD</label>
+                  <div class="payment-box">
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        id="PaymentID13421"
+                        class="form-check-input"
+                        name="PaymentID"
+                        data-id="13421"
+                        value="13421"
+                        checked="checked"
+                      />
                     </div>
-                  
+                    <img class="ic" src="./assets/img/cod.png" alt="" />
+
+                    <label for="PaymentID13421">Thanh toán COD</label>
+                  </div>
+
                   <div class="list_bank list_bank-13421"></div>
-
                 </div>
-
               </div>
             </div>
           </div>
@@ -637,12 +637,11 @@
               <div>
                 <div class="hidden mg-top-20">
                   <div class="d-flex" style="text-align: left">
-                
                     <div class="d-flex" style="flex: 1">
                       <input type="checkbox" id="policy" name="policy" />
                       <label for="policy" style="margin-left: 10px">
-                        Tôi đồng ý nhận các bản tin thương mại từ TH.vn qua email
-                        cá nhân và các phương tiện khác.
+                        Tôi đồng ý nhận các bản tin thương mại từ TH.vn qua
+                        email cá nhân và các phương tiện khác.
                       </label>
                     </div>
                   </div>
@@ -657,14 +656,14 @@
       </div>
       <div class="footer text-white">
         <div class="row">
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <a href="#" class="logo">TH Stylist</a>
 
             <a href="#">Email: thstyle@gmail.com</a>
 
             <a href="#">Hotline: 19009889 </a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>CÔNG TY</p>
 
             <a href="#">Giới thiệu</a>
@@ -672,7 +671,7 @@
 
             <a href="#">Tuyển dụng</a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>CHÍNH SÁCH</p>
             <a href="#">Chính sách thành viên</a>
 
@@ -682,7 +681,7 @@
 
             <a href="#">Thanh toán & Vận chuyển</a>
           </div>
-          <div class="col l-3 m-3 c-3 text-center">
+          <div class="col l-3 m-3 c-12 text-center mg-top-20">
             <p>KẾT NỐI</p>
             <a href="#">Facebook</a>
 
@@ -696,8 +695,16 @@
 
     <div class="modal modal-menu">
       <div class="nav-items">
+        <div class="search">
+          <div class="over-search-item">
+            <input type="text" />
+            <button>
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
         <a href="./home.html">Home</a>
-        
+
         <a href="./men-fashion.html">Thời trang Nam</a>
         <a href="./women-fashion.html">Thời trang Nữ</a>
         <a href="./accessory.html">Phụ kiện</a>
@@ -816,48 +823,62 @@
         </div>
 
         <div class="modal-body row">
-          <div class="col l-4">
-            <div class="image-product-cart">
-              <img src="./assets/img/new-product1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col l-8">
-            <div class="over-info-cart">
-              <div class="name-product-cart">
-                ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
-              </div>
-              <div class="parame">
-                <div class="price-product-cart mg-top-10">
-                  <div style="font-weight: bold">60000 <span>VNĐ</span></div>
+          <div class="list-item-cart">
+            <div class="item-cart row">
+              <div class="col l-4 m-4 c-6">
+                <div class="img-product image-product-cart">
+                  <div class="img">
+                    <a href="./details.html">
+                      <img src="./assets/img/new-product1.jpg" alt=""
+                    /></a>
+                  </div>
                 </div>
-                <div class="size-prosuct-cart mg-top-10">
-                  <label for="size">SIZE:</label>
+              </div>
+              <div class="col l-8 m-8 c-6">
+                <div class="over-info-cart">
+                  <div class="product-name name-product-cart">
+                    ÁO PHÔNG OVERSIZED PATTERN STAR WARS BOOZILLA
+             product-price      </div>
+                  <div class="parame">
+                    <div class="price-product-cart mg-top-10">
+                      <div style="color: tomato">60000 <span>VND</span></div>
+                    </div>
+                    <div class="size-prosuct-cart mg-top-10">
+                      <label for="size">SIZE:</label>
 
-                  <select name="size" id="size">
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                  </select>
-                </div>
-                <div class="quantity mg-top-10">
-                  <div class="btn-container">
-                    <div class="btn counterBtn prevBtn">-</div>
-                    <div id="counter" style="color: #333333">1</div>
-                    <div class="btn counterBtn nextBtn">+</div>
-                  </div>
-                  <div class="container-delete-product">
-                    <i class="bx bxs-coffee-togo"></i>
+                      <select name="size" id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                      </select>
+                    </div>
+                    <div class="quantity mg-top-10">
+                      <div class="btn-container">
+                        <div class="btn counterBtn prevBtn">-</div>
+                        <div class="counter" style="color: #333333">1</div>
+                        <div class="btn counterBtn nextBtn">+</div>
+                      </div>
+                      <div class="container-delete-product">
+                        <i class="bx bxs-coffee-togo"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="total-pay mg-top-30">
-            Tổng cộng :<div style="font-weight: bold;">60000 <span>VNĐ</span></div> 
-          </div>
-          <button class="btn-pay text-white mg-top-25" onclick="location.href = 'http://127.0.0.1:5500/pay.html'">Thanh toán ngay</button>
         </div>
+        <div class="total mg-top-30">
+          <div>Tổng cộng :</div>
+          <div>60000 <span>VND</span></div>
+        </div>
+        <button
+          class="btn-pay text-white mg-top-25"
+          onclick="location.href = 'http://127.0.0.1:5500/pay.html'"
+        >
+          Thanh toán ngay
+        </button>
 
         <div class="modal-footer">
           <p class="need-help">Need <a href="" class="help">help</a></p>

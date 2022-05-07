@@ -41,7 +41,7 @@
 
 .search {
   opacity: .8;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   
@@ -89,7 +89,7 @@ opacity: 1;
 }
 
 .show-menu {
-  display: block;
+  display: flex;
 }
 
 .header .icon-user, .header .icon-cart {
@@ -121,7 +121,6 @@ opacity: 1;
 .header .brand, .footer .logo {
   font-family: "Sedgwick Ave", cursive;
   position: relative;
-  z-index: 12;
   display: block;
 }
 
@@ -185,8 +184,12 @@ opacity: 1;
 }
 
 .new-product .img-product {
-  padding: 10px 10px 20px;
   position: relative;
+}
+
+.img-product-slider{
+  margin: 10px 10px 20px;
+
 }
 
 .new-product .img-product .title {
@@ -268,8 +271,7 @@ opacity: 1;
 
 
 .modal .modal-contener{
-  top: 115px;
-  right: 80px;
+  
   background-color: white;
   position: absolute;
   min-height: 200px;
@@ -529,5 +531,33 @@ right: 0;
 
   .header .mobile-menu {
     display: block;
+  }
+  .search-pc {
+    display: none;
+  }
+
+  .over-search-item {
+    width: 200px;
+  }
+  .over-search-item:focus {
+    color: #000;
+  }
+
+  
+}
+
+@media(max-width : 580px){
+  .header .brand, .footer .logo{
+    font-size: 40px;
+  }
+
+  .header .icon-user, .header .icon-cart{
+    width: 40px;
+    height: 40px;
+  }
+
+  .add-to-cart {
+    bottom: 80px;
+    padding: 3px;
   }
 }
