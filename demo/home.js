@@ -1,12 +1,14 @@
 let input = document.querySelector(".over-search-item");
 let button = document.querySelector("button");
-
+let productCost = document.querySelector(".product-cost");
+let productDiscount = document.querySelector(".product-discount");
 let user = document.querySelector(".icon-user");
 let header = document.querySelector(".header");
 let home = document.querySelector("#doan")
 let modalSignin = document.querySelector(".js-modal-signin");
 let modalClose = document.querySelectorAll(".js-modal-close");
 let modalMenu = document.querySelector(".modal-menu")
+let navItems = document.querySelector(".nav-items")
 let btnSignup = document.querySelector(".js-btn-signup");
 let btnSignin = document.querySelector(".js-btn-signin");
 let modalSignup = document.querySelector(".js-modal-signup");
@@ -14,7 +16,7 @@ let iconCart = document.querySelector(".icon-cart");
 let modalCart = document.querySelector(".js-modal-cart");
 let inputEmail = document.querySelector(".input-email");
 let hidden = document.querySelector(".hidden");
-var mobileMenu = document.querySelector(".mobile-menu");
+var iconMobileMenu = document.querySelector(".mobile-menu");
 let deleteProductCart = document.querySelector(".container-delete-product");
 let btnAdd = document.querySelector(".nextBtn");
 let btnSubt = document.querySelector(".prevBtn");
@@ -52,7 +54,7 @@ function renderCart(arr){
   for (let i = 0; i < arr.length; i++) {
     let t = arr[i];
     product +=`
-    <div class="item-cart row">
+    <div class="item-cart row mg-top-10">
               <div class="col l-4 m-4 c-6">
                 <div class="image-product-cart">
                   ${t.img}
@@ -65,7 +67,12 @@ function renderCart(arr){
                   </div>
                   <div class="parame">
                     <div class="price-product-cart mg-top-10">
-                      ${t.price}
+                    <span class="product-cost">
+                      ${t.cost}
+                    </span>
+                    <span class="product-discount">
+                      ${t.discount}
+                    </span>
                     </div>
                     <div class="size-prosuct-cart mg-top-10">
                       ${t.size}
@@ -92,12 +99,13 @@ renderCart(listProduct)
 
 for(let btnAddCart of btnAddCarts){
   btnAddCart.addEventListener("click", function(e){
-    console.log(e.target.previousElementSibling)
+    // console.log(productDiscount.textContent)
     let newProduct ={
       id: createId(),
       img: imgProduct.innerHTML,
       name: productName.innerText,
-      price: productPrice.innerHTML,
+      cost: productCost.innerHTML,
+      discount: productDiscount.innerHTML,
       size: productSize.innerHTML
     };
     listProduct.push(newProduct);
@@ -129,11 +137,9 @@ function hideModalSignin() {
     modalSignin.classList.remove("open");
 }
 function showModalMenu() {
-  modalMenu.classList.add("open");
+  modalMenu.classList.toggle("open");
 }
-function hideModalMenu() {
-  modalMenu.classList.remove("open");
-}
+
 function hideModalSignup() {
   modalSignup.classList.remove("open");
 }
@@ -147,8 +153,12 @@ function showModalCart() {
   modalCart.classList.add("open");
 }
 
-mobileMenu.addEventListener("click", showModalMenu)
-modalMenu.addEventListener("click", hideModalMenu)
+iconMobileMenu.addEventListener("click", showModalMenu)
+modalMenu.addEventListener("click", function(e){
+  if(e.target == e.currentTarget){
+    showModalMenu()
+  }
+})
   
 
 iconCart.addEventListener("click", showModalCart);
@@ -180,11 +190,13 @@ btnSignin.addEventListener("click", function () {
   showModalSignin();
 });
 
-window.addEventListener("scroll", function () {
-  var x = pageYOffset;
-  if (x > 80) {
-    header.classList.add("changcolor");
-  } else {
-    header.classList.remove("changcolor");
-  }
-});
+
+
+// window.addEventListener("scroll", function () {
+//   var x = pageYOffset;
+//   if (x > 80) {
+//     header.classList.add("changcolor");
+//   } else {
+//     header.classList.remove("changcolor");
+//   }
+// });
