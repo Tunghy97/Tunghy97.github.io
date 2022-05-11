@@ -582,8 +582,9 @@ right: 0;
 }
 
 @media(max-width : 580px){
-  
-
+  .product-discount {
+    margin-left: 10px;
+  }
   .header .icon-user, .header .icon-cart{
     width: 30px;
     height: 30px;
@@ -606,7 +607,7 @@ right: 0;
   
 }
 
-@media(max-width : 380px){
+@media(max-width : 475px){
   .add-to-cart {
     bottom: 120px;
     padding: 0;
@@ -618,5 +619,8 @@ right: 0;
   i {
     font-size: 20px;
     
+}
+.product-discount {
+  margin-left: 0;
 }
 }
