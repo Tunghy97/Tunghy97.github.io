@@ -103,7 +103,7 @@ for(let i=0; i<btnAddCarts.length; i++){
       name: productName[i].innerText,
       cost: productCost[i].innerHTML,
       discount: productDiscount[i].innerHTML,
-      size: productSize[i].innerHTML
+     
     };
     listProduct.push(newProduct);
     renderCart(listProduct);
