@@ -45,6 +45,7 @@ function renderCart(arr){
   listItemCart.innerHTML = "";
   if(arr.length == 0){
     listItemCart.innerHTML = "không có sản phẩm nào trong giỏ hàng";
+    localStorage.removeItem(localKey)
     return
   }
   let product = "";
