@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-name {
+   height: 20px;
+   white-space: nowrap;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.title {
+padding: 8px 20px;
+}
+
+.product-cost{
+    color: tomato;
+}
+
+.img {
+    height: 300px;
+}
+
+.img-product {
+    margin: 60px 0;
+}
+
+.detail-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
